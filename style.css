@@ -1,4 +1,9 @@
 
+  * {
+      margin: 0;
+      padding: 0;
+  }
+
   html {
     box-sizing: border-box;
     font-size: 62.5%;
@@ -215,3 +220,51 @@
     position: relative;
     top:8em;
   }
+
+  @media (max-width: 540px) { 
+      #navbar{
+        justify-content: center;
+      }
+
+      #welcome-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        height: 100vh;
+        margin:auto;
+      }
+    
+      #projects{
+        padding:0;
+      }
+    
+      #projects-grid {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 4rem;
+      }
+
+      .images{
+        width: -webkit-fill-available;
+        height:auto;
+      }
+
+      #contact {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 80vh; 
+      }
+    
+      #externalLinks{
+        display: flex;
+        flex-direction: column;
+        margin:1rem;
+      }
+   }
